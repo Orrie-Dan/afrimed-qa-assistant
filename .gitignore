@@ -67,3 +67,6 @@ desktop.ini
 .vscode/
 .idea/
 .claude/
+
+# Personal defence notes
+report/defense_brief.md

@@ -6,7 +6,7 @@
 |---|---|
 | 🌐 **Live app** | https://huggingface.co/spaces/OrrieUzi/afrimed-assistant |
 | 🎥 **Demo video** | https://youtu.be/r-1iQLhY5ek |
-| 📄 **Report** | [`report/report.docx`](report/report.docx) |
+| 📄 **Report** | [`report/report.pdf`](report/report.pdf) · [`report/report.docx`](report/report.docx) |
 
 > ⚠️ **Not medical advice.** This is an academic project. The model can be wrong, sometimes confidently: see [Limitations](#limitations).
 
@@ -81,7 +81,7 @@ models/gate.joblib  trained out-of-domain gate
 results/            experiments table v2, significance tests, CPU latency; gate metrics;
                     test predictions (E0 1.5B, E3)
 docs/               data findings, benchmarks, results, gate and deployment
-report/             final report (report.docx) and its figures
+report/             final report (report.pdf, report.docx) and its figures
 ```
 
 ## Reproducing the results
