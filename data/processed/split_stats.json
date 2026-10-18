@@ -1,0 +1,34 @@
+{
+  "raw_sha256": "422be9b69bf8870cbc40e58217a9f18cd47f640b96ab60226e6ec4a92256cbe3",
+  "raw_rows": 15275,
+  "qa_dropped": {
+    "quality_false": 11,
+    "duplicate_question": 1,
+    "empty_question_or_answer": 0
+  },
+  "qa_by_split_type_tier": {
+    "test|mcq|crowdsourced": 25,
+    "test|mcq|expert": 781,
+    "test|saq|crowdsourced": 174,
+    "test|saq|expert": 72,
+    "train|mcq|crowdsourced": 88,
+    "train|mcq|expert": 2736,
+    "train|saq|crowdsourced": 610,
+    "train|saq|expert": 251,
+    "val|mcq|crowdsourced": 12,
+    "val|mcq|expert": 391,
+    "val|saq|crowdsourced": 87,
+    "val|saq|expert": 36
+  },
+  "qa_multi_answer_by_split": {
+    "train": 220,
+    "test": 62,
+    "val": 31
+  },
+  "consumer_by_split": {
+    "train": 7208,
+    "val": 901,
+    "test": 901
+  },
+  "consumer_dropped_duplicates_or_quality": 990
+}

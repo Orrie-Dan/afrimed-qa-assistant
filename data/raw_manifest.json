@@ -1,0 +1,175 @@
+{
+  "note": "Pinned sources for data/raw/. Rebuild with: python -P scripts/download_data.py",
+  "files": [
+    {
+      "path": "data/raw/afri_med_qa_15k_v2.5_phase_2_15275.csv",
+      "url": "https://raw.githubusercontent.com/intron-innovation/AfriMed-QA/9bb0ffc03ef41a0568c3f47223a23997922afb52/data/afri_med_qa_15k_v2.5_phase_2_15275.csv",
+      "sha256": "422be9b69bf8870cbc40e58217a9f18cd47f640b96ab60226e6ec4a92256cbe3"
+    },
+    {
+      "path": "data/raw/LICENSE_upstream.txt",
+      "url": "https://raw.githubusercontent.com/intron-innovation/AfriMed-QA/9bb0ffc03ef41a0568c3f47223a23997922afb52/LICENSE",
+      "sha256": "1349a4b6148492b44f629e64eed676612e234fe9a839e4f3b277c1482c8849f1"
+    },
+    {
+      "path": "data/raw/ood/afriqa/LICENSE",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/LICENSE",
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661"
+    },
+    {
+      "path": "data/raw/ood/afriqa/bem.dev.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/bem/queries.afriqa.bem.en.dev.json",
+      "sha256": "999f04e1d6e7cfdbc034cdf25c7bad01d6635a1300bd2431258adaa3e0b05402"
+    },
+    {
+      "path": "data/raw/ood/afriqa/bem.test.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/bem/queries.afriqa.bem.en.test.json",
+      "sha256": "5974ae571ba51f850ad753763e2ea11d2df3e17f4a94be6119841f3f7a600eda"
+    },
+    {
+      "path": "data/raw/ood/afriqa/bem.train.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/bem/queries.afriqa.bem.en.train.json",
+      "sha256": "29846ceed7e34cb1bfe4e579cd6269945a76b2006a5ad2cd5897b1d0715374d6"
+    },
+    {
+      "path": "data/raw/ood/afriqa/hau.dev.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/hau/queries.afriqa.hau.en.dev.json",
+      "sha256": "200d9461b99123297bb585f9ea5f651ae00dbebfd6135d8b7a7d9bfe5730f579"
+    },
+    {
+      "path": "data/raw/ood/afriqa/hau.test.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/hau/queries.afriqa.hau.en.test.json",
+      "sha256": "34f89d0110bf5feea02ea956743e76d1e7ca6a0e552133fe75043e9de56d1728"
+    },
+    {
+      "path": "data/raw/ood/afriqa/hau.train.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/hau/queries.afriqa.hau.en.train.json",
+      "sha256": "0788dacfad5e295173cc3e1854d18675c9bac62713a4389560dc940a203d6972"
+    },
+    {
+      "path": "data/raw/ood/afriqa/ibo.dev.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/ibo/queries.afriqa.ibo.en.dev.json",
+      "sha256": "a3bb13f95ef0299e8357ecf38d89a3aaf4bd81b3364e9a6f34816afa469566d2"
+    },
+    {
+      "path": "data/raw/ood/afriqa/ibo.test.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/ibo/queries.afriqa.ibo.en.test.json",
+      "sha256": "c02c61f932ea5e82fad2ad44e62eb4a20e7c9fb9f3d8e17ab7110583cbc008c6"
+    },
+    {
+      "path": "data/raw/ood/afriqa/ibo.train.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/ibo/queries.afriqa.ibo.en.train.json",
+      "sha256": "38a5ecb173df3ac9d4b6ba5407c0cbfb47d0b0a25d4081055eea8b6e89f31c42"
+    },
+    {
+      "path": "data/raw/ood/afriqa/kin.dev.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/kin/queries.afriqa.kin.en.dev.json",
+      "sha256": "5ed2799994447b7e84d94bf211a42df6ffacc1fe168e078a8f60145b4a797a71"
+    },
+    {
+      "path": "data/raw/ood/afriqa/kin.test.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/kin/queries.afriqa.kin.en.test.json",
+      "sha256": "6d74833deed82c8ba6145988bce568a306ed7786adc555f91fc868d062ce44a2"
+    },
+    {
+      "path": "data/raw/ood/afriqa/kin.train.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/kin/queries.afriqa.kin.en.train.json",
+      "sha256": "c6c238bb3514a90a4b71394a0b9f6e8b6f1a55d499e549c21e159c7b6697af1d"
+    },
+    {
+      "path": "data/raw/ood/afriqa/swa.dev.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/swa/queries.afriqa.swa.en.dev.json",
+      "sha256": "cdc61a37956592318f98c8d6ca7cc3908bfbc5bf2cb30af4c13203c4f446a054"
+    },
+    {
+      "path": "data/raw/ood/afriqa/swa.test.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/swa/queries.afriqa.swa.en.test.json",
+      "sha256": "0804e99d130a7d9357139686db1957aff33e82ab4d8879c65839af35329d690a"
+    },
+    {
+      "path": "data/raw/ood/afriqa/swa.train.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/swa/queries.afriqa.swa.en.train.json",
+      "sha256": "d5d03c1bf62de83e1dcd951483717773c02b1c2d6fd7fdaaa750bcc7c0751776"
+    },
+    {
+      "path": "data/raw/ood/afriqa/twi.dev.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/twi/queries.afriqa.twi.en.dev.json",
+      "sha256": "af5830d09eb506b53de9656d8ab25b609559b9bfdbd439ef509394dda2c11ca1"
+    },
+    {
+      "path": "data/raw/ood/afriqa/twi.test.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/twi/queries.afriqa.twi.en.test.json",
+      "sha256": "61e3afe84835edc93f4489cbaf27a6b948b41546807988021a85e9090814ed35"
+    },
+    {
+      "path": "data/raw/ood/afriqa/twi.train.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/twi/queries.afriqa.twi.en.train.json",
+      "sha256": "8400b59db710752b424df78159fbce4e469e87f74fdd14607426b10d231d0609"
+    },
+    {
+      "path": "data/raw/ood/afriqa/yor.dev.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/yor/queries.afriqa.yor.en.dev.json",
+      "sha256": "c195aafb72f1c38046a52a4e9d3965bb6cb2383533e3b48d836846ffe8c89093"
+    },
+    {
+      "path": "data/raw/ood/afriqa/yor.test.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/yor/queries.afriqa.yor.en.test.json",
+      "sha256": "85027dcfd52e5783ac97acd2b35e5e56bc42a2c4baf8c4cb7b5e5de2c925bcde"
+    },
+    {
+      "path": "data/raw/ood/afriqa/yor.train.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/yor/queries.afriqa.yor.en.train.json",
+      "sha256": "e5005c216a0926c0f9f1ca6c34903ac8d52a21b8921bb87ce5f92d479968375f"
+    },
+    {
+      "path": "data/raw/ood/afriqa/zul.dev.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/zul/queries.afriqa.zul.en.dev.json",
+      "sha256": "c851f25609ce8b4d4f507a556c09af93e603e079343c4ea613e66ec6bb530785"
+    },
+    {
+      "path": "data/raw/ood/afriqa/zul.test.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/zul/queries.afriqa.zul.en.test.json",
+      "sha256": "2fe78d9fe0838277b2bc355483871fe60a2847049ff6c164befb164fa177ea61"
+    },
+    {
+      "path": "data/raw/ood/afriqa/zul.train.json",
+      "url": "https://raw.githubusercontent.com/masakhane-io/afriqa/5c29933753692c28773c34ac1f68482007f1d2bb/data/queries/zul/queries.afriqa.zul.en.train.json",
+      "sha256": "fe52db65b67183543b6014a7b6bb7c7f7dd69b5bd2b5bd6fd1b3cdbc2e56da02"
+    },
+    {
+      "path": "data/raw/ood/tatqa/tatqa_dataset_train.json",
+      "url": "https://raw.githubusercontent.com/NExTplusplus/TAT-QA/870accc41953dcde885aabeb963d94aabdc0fbc3/dataset_raw/tatqa_dataset_train.json",
+      "sha256": "2df6e722cdbaaa37efcbfb280f5c9a15be29a6ec18f618ef936fe63cc6d07c69"
+    },
+    {
+      "path": "data/raw/ood/tatqa/tatqa_dataset_dev.json",
+      "url": "https://raw.githubusercontent.com/NExTplusplus/TAT-QA/870accc41953dcde885aabeb963d94aabdc0fbc3/dataset_raw/tatqa_dataset_dev.json",
+      "sha256": "8da095a819af6db3c14877c6df2d4d29960e41d1a63dd1fa853507bd2a616af5"
+    },
+    {
+      "path": "data/raw/ood/tatqa/tatqa_dataset_test_gold.json",
+      "url": "https://raw.githubusercontent.com/NExTplusplus/TAT-QA/870accc41953dcde885aabeb963d94aabdc0fbc3/dataset_raw/tatqa_dataset_test_gold.json",
+      "sha256": "c4d08418359c1d76468dec420ee748a37f48c06b63cb8ec2766f19d5d314b597"
+    },
+    {
+      "path": "data/raw/ood/squad/train.parquet",
+      "url": "https://huggingface.co/datasets/rajpurkar/squad/resolve/7b6d24c440a36b6815f21b70d25016731768db1f/plain_text/train-00000-of-00001.parquet",
+      "sha256": "ea7f52bac024f6b1bdc7aaa2a4ee302cba8c2fdc8d4a235cf18a9a5196b6175b"
+    },
+    {
+      "path": "data/raw/ood/squad/validation.parquet",
+      "url": "https://huggingface.co/datasets/rajpurkar/squad/resolve/7b6d24c440a36b6815f21b70d25016731768db1f/plain_text/validation-00000-of-00001.parquet",
+      "sha256": "8c6646d36bd5a95061e076788cf3161d11f6f3e7d625dac7a83bbed0a49f69f7"
+    },
+    {
+      "path": "data/raw/ood/dolly/databricks-dolly-15k.jsonl",
+      "url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a/databricks-dolly-15k.jsonl",
+      "sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec"
+    },
+    {
+      "path": "data/raw/ood/agri/train.parquet",
+      "url": "https://huggingface.co/datasets/KisanVaani/agriculture-qa-english-only/resolve/2f32fb399fbb71eb417235aeb349e637f785a0fd/data/train-00000-of-00001.parquet",
+      "sha256": "a77850bd7e9d7dda41204dc794466411563b6ea9cdd8e8d329add6097440be45"
+    }
+  ]
+}
