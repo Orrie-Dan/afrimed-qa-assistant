@@ -6,7 +6,7 @@
 |---|---|
 | 🌐 **Live app** | https://huggingface.co/spaces/OrrieUzi/afrimed-assistant |
 | 🎥 **Demo video** | https://youtu.be/r-1iQLhY5ek |
-| 📄 **Report** | [`report/report.docx`](report/report.docx) (source: [`report/report.md`](report/report.md)) |
+| 📄 **Report** | [`report/report.docx`](report/report.docx) |
 
 > ⚠️ **Not medical advice.** This is an academic project. The model can be wrong, sometimes confidently: see [Limitations](#limitations).
 
@@ -43,7 +43,7 @@ The paired McNemar tests use Bonferroni correction ([`docs/results_run1.md`](doc
   - At 1.5B the gain in option likelihood is *not* significant (p = 0.10). The improvement there is mostly that the model learned to commit to one option: multi-letter answers fell from 23% to 4%.
 - **Model size is the strongest effect.** Zero-shot 1.5B beats fine-tuned 0.5B.
 - **Training on MCQs matters.** The SAQ-only model (E2) loses MCQ ability.
-- **Overlap metrics are not correctness.** Fine-tuning roughly doubles ROUGE-L, largely by learning the short, templated answer style of the crowdsourced data. Some high-ROUGE answers are factually wrong, so the report's error analysis judges answers on their medical content, not only on overlap. A blind human-rating protocol is prepared for future work ([`docs/rating_guide.md`](docs/rating_guide.md)).
+- **Overlap metrics are not correctness.** Fine-tuning roughly doubles ROUGE-L, largely by learning the short, templated answer style of the crowdsourced data. Some high-ROUGE answers are factually wrong, so the report's error analysis judges answers on their medical content, not only on overlap.
 
 **Out-of-domain gate** ([`docs/ood_gate.md`](docs/ood_gate.md)):
 
@@ -65,13 +65,13 @@ The probe set was written to look for shortcuts, such as treating chit-chat or A
 | **Hugging Face Transformers, PEFT** (LoRA), PyTorch | A format-independent MCQ metric (option likelihood) and paired significance tests |
 | **ROUGE-L** (`rouge-score`), **BERTScore** (`bert-score`) | The out-of-domain gate: data assembly from 8 sources, medical-content filtering, shortcut diagnosis, two probe sets |
 | Gate negatives: AfriQA, TAT-QA, SQuAD v1.1, Dolly-15k, KisanVaani agriculture QA | Crisis-safety rule, streaming Gradio app, Space builder |
-| scikit-learn, Gradio, Hugging Face Spaces | A blind rating protocol (prepared, not run), and all analysis in `docs/` |
+| scikit-learn, Gradio, Hugging Face Spaces | All analysis in `docs/` |
 
 ## Repository layout
 
 ```
 src/afrimed/        shared code: prompts, data, training, inference, metrics, evaluation, gate, assistant
-scripts/            local CPU scripts: data download/prep, gate training, rating, notebook + Space builders
+scripts/            local CPU scripts: data download/prep, gate training, notebook + Space builders
 notebooks/          Colab notebooks (generated from src/ by scripts/build_*_notebook.py; don't hand-edit)
   runs/             executed copies of the notebooks, with their outputs (evidence for reported numbers)
 app/app.py          Gradio app
@@ -79,9 +79,9 @@ data/processed/     our splits (QA and gate); raw files are downloaded, see belo
 data/ood_probe*.jsonl  hand-written gate probe sets (evaluation only)
 models/gate.joblib  trained out-of-domain gate
 results/            experiments table v2, significance tests, CPU latency; gate metrics;
-                    test predictions (E0 1.5B, E3); blind rating sheet (prepared, not rated)
-docs/               data findings, benchmarks, results, gate, deployment and rating guide
-report/             final report (report.docx; report.md is its source) and figures
+                    test predictions (E0 1.5B, E3)
+docs/               data findings, benchmarks, results, gate and deployment
+report/             final report (report.docx) and its figures
 ```
 
 ## Reproducing the results

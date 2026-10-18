@@ -20,6 +20,17 @@ results/gate/v1_no_dolly_agri/*.joblib
 PLAN.md
 report/video_script.md
 
+# Report source and build helpers (the submitted report is report/report.docx + report/figures/)
+report/report.md
+scripts/md_to_docx.py
+scripts/make_figures.py
+
+# Manual-rating material (not part of the submitted evaluation)
+docs/rating_guide.md
+scripts/make_rating_sheet.py
+scripts/score_ratings.py
+results/rating/
+
 # ---------------------------------------------------------------------------
 # Secrets and credentials (never commit)
 # ---------------------------------------------------------------------------
