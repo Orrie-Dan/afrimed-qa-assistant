@@ -43,7 +43,7 @@ MCQ parse failures were 0–0.9% in every run, so the letter extraction is not w
    - "African race is a modifiable risk factor for hypertension. True or False?" The fine-tuned model said "True" (**wrong**). The zero-shot model said "False" (right).
    - Total gastrectomy question: the fine-tuned model degenerated into a repeated list ("Hypertriglyceridemia" over and over).
 
-   This is the strongest evidence for the manual correctness/safety rating (axis A), and for not treating automatic overlap metrics as correctness.
+   This is the strongest evidence for not treating automatic overlap metrics as correctness.
 
 ## Confirmed: the low E0-0.5B and E2 MCQ scores come from answering several letters
 
@@ -112,7 +112,7 @@ Test set, 744 single-answer MCQs; 95% bootstrap CI in brackets.
 2. **Model size is the largest and most reliable effect.** 1.5B beats 0.5B with fine-tuning on both metrics. The untuned 1.5B even beats the fine-tuned 0.5B on likelihood.
 3. **Including MCQs in training matters for MCQ knowledge**, not only for format: E1 beats E2 on likelihood (p = 0.003).
    - E2 itself is no better than zero-shot (0.319 vs 0.311; this pair was not tested).
-4. **Caveat:** the test only says whether two models differ. It says nothing about how correct either model's medical content is. The SAQ correctness and safety questions still need the manual rating.
+4. **Caveat:** the test only says whether two models differ. It says nothing about how correct either model's medical content is. SAQ correctness is addressed qualitatively in the report's error analysis (Section 7.2).
 
 ## Data issues found
 

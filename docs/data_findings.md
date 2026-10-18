@@ -32,7 +32,7 @@
    - Crowdsourced SAQs are generic and templated: "What is the primary…" opens 103 of them. Answers are about 29 words.
    - Expert SAQs are clinical. Their answers range from one word ("Alpha-fetoprotein") to 900-word essays.
    - Results will be reported per tier.
-4. **Label noise exists.** Example: a 4-week-old with projectile non-bilious vomiting is labelled "Duodenal atresia". The textbook answer is pyloric stenosis. Some reference answers are wrong, so the manual rating should judge correctness itself and not only agreement with the reference.
+4. **Label noise exists.** Example: a 4-week-old with projectile non-bilious vomiting is labelled "Duodenal atresia". The textbook answer is pyloric stenosis. Some reference answers are wrong, so evaluation should judge correctness itself and not only agreement with the reference.
 5. **Encoding artefacts.** Some expert answers contain U+FFFD characters, which `clean()` replaces with spaces.
 6. **Duplicates.**
    - Answered pool: one duplicate MCQ pair, dropped.
@@ -61,4 +61,4 @@ Consumer queries (the in-domain side of the out-of-domain gate), after deduplica
 
 - The **test set is small for some slices**. SAQ expert has 72 items and MCQ crowd has 25. Report confidence intervals, or at least counts, for each slice.
 - **Training data is dominated by expert MCQs.** The short-answers-only vs short-answers-plus-MCQ experiment is still meaningful, but the training formats differ: the model outputs option letters for one and free text for the other.
-- The **expert SAQ answers vary hugely in length**, which makes ROUGE-L noisy on them. That is another reason to keep the manual rating.
+- The **expert SAQ answers vary hugely in length**, which makes ROUGE-L noisy on them. That is another reason to look beyond overlap metrics.

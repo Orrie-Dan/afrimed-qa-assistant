@@ -25,7 +25,7 @@ This project builds an English medical QA assistant for African contexts:
 
 **Evaluation and main results.** Against zero-shot baselines, the deployed model (1.5B + LoRA) reaches 0.454 exact-set accuracy on 806 test multiple-choice questions (MCQs), compared with 0.360 zero-shot. It reaches ROUGE-L 0.330 and BERTScore 0.316 on 246 short-answer questions (SAQs), compared with 0.177 and 0.160 zero-shot.
 
-**A format-independent check.** I added an MCQ metric that reads which option the model rates most likely, together with paired McNemar tests. This showed that at 1.5B most of the MCQ gain comes from the model learning to commit to a single answer: the knowledge-level gain (0.479 → 0.508) is not statistically significant. Model size was the largest effect. Several high-overlap short answers were also factually wrong, so a blind manual correctness and safety rating complements the automatic metrics.
+**A format-independent check.** I added an MCQ metric that reads which option the model rates most likely, together with paired McNemar tests. This showed that at 1.5B most of the MCQ gain comes from the model learning to commit to a single answer: the knowledge-level gain (0.479 → 0.508) is not statistically significant. Model size was the largest effect. Error analysis also showed that several high-overlap short answers were factually wrong, so the overlap metrics overstate answer quality.
 
 **The deployed system** combines:
 - a rule-based crisis check;
@@ -188,7 +188,6 @@ The baseline is the **same pre-trained instruction-tuned model, used zero-shot**
   - 95% bootstrap confidence intervals (1,000 resamples).
   - Exact two-sided **McNemar tests** on paired per-question correctness (McNemar, 1947), with a Bonferroni-corrected threshold of p < 0.005 for 10 tests (Dunn, 1961).
 - **Selection rule:** model choice uses validation data only; test results are reported, never used to choose.
-- **Manual rating:** 40 test SAQs (20 expert, 20 crowdsourced). The deployed model and the zero-shot 1.5B model are rated **blind**, with randomised A/B order. Correctness is scored 0/1/2 and unsafe yes/no, judged on medical facts rather than agreement with the reference (`docs/rating_guide.md`).
 
 ### 5.6 Out-of-domain gate (`src/afrimed/gate.py`)
 
@@ -303,27 +302,9 @@ The probe sets are small, so their scores carry wide uncertainty (roughly ±0.1)
 3. **Repetition loops.** Examples: a total-gastrectomy answer repeating "Hypertriglyceridemia", and in the live app, pre-eclampsia signs ("• Severe headache • Severe abdominal pain • Severe headache …"). This is a known failure of greedy decoding in small models (Holtzman et al., 2020). List-style expert references in training may make it worse.
 4. **Expert SAQs remain hard.** ROUGE-L is only 0.16 even for E3. Expert references vary from one word to essays, and they need clinical reasoning that a 1.5B model trained on 861 SAQs does not acquire.
 5. **Format confusion without MCQ training.** E2 answered 85% of single-answer MCQs with several letters (Figure 1). The SAQ-only model never learned that one letter is expected.
-6. **Noisy references.** Some "errors" are reference errors, such as the duodenal-atresia label in Section 4.2. This is another reason why rating must judge medical facts, not agreement with the reference.
+6. **Noisy references.** Some "errors" are reference errors, such as the duodenal-atresia label in Section 4.2. This is another reason why evaluation should judge medical facts, not only agreement with the reference.
 
-### 7.3 Manual correctness and safety rating
-
-> **[TO COMPLETE after rating]** Run `python -P scripts/score_ratings.py`, then fill in the table and the paragraph.
-
-**Table 3. Blind manual rating, 40 test SAQs.**
-
-| Model | Correct (2) | Partly (1) | Wrong (0) | Unsafe | Mean (0–2) |
-|---|---|---|---|---|---|
-| E0 zero-shot 1.5B | | | | | |
-| E3 LoRA 1.5B (deployed) | | | | | |
-
-_[Paired test on "correct" and interpretation: does fine-tuning make answers more correct, or only shorter? Compare with ROUGE-L, and note references flagged as wrong.]_
-
-**Limits of the rating:**
-- There is one rater, who is not a medical professional.
-- The sample is 40 questions.
-- Blinding is imperfect, because answer length often reveals the model.
-
-### 7.4 Discussion
+### 7.3 Discussion
 
 The automatic metrics and the error analysis tell a consistent story. LoRA fine-tuning on AfriMed-QA makes a small model a **better-behaved** assistant: it is concise, it commits to one answer, and it uses the domain's style. It makes the model only modestly more **knowledgeable** at 1.5B. This agrees with the view that fine-tuning mostly adapts format and style (Zhou et al., 2023), and with Olatunji et al.'s (2025) finding that smaller, edge-friendly models struggle to reach a passing score on AfriMed-QA.
 
@@ -361,7 +342,7 @@ The automatic metrics and the error analysis tell a consistent story. LoRA fine-
 
 **Evaluation**
 - ROUGE-L and BERTScore measure overlap, not correctness.
-- The manual rating has a single non-expert rater and 40 questions.
+- SAQ correctness was assessed only qualitatively, through the examples in Section 7.2; no systematic human rating was done.
 - The probe sets for the gate are small.
 - Results come from a single seed.
 
@@ -375,7 +356,7 @@ The automatic metrics and the error analysis tell a consistent story. LoRA fine-
 - Decoding safeguards against repetition, such as an n-gram repetition block, re-evaluated as a full experiment.
 - Calibrated abstention ("I'm not sure") for low-confidence answers.
 - An embedding-based gate.
-- Multiple clinician raters with inter-rater agreement.
+- A blind human correctness and safety rating of SAQ answers, ideally by several clinicians with inter-rater agreement. A protocol and a blind A/B rating sheet are already prepared in the repository (`docs/rating_guide.md`).
 - Several seeds.
 - Extension to other languages using AfriMed-QA's multilingual follow-ups.
 
@@ -476,5 +457,5 @@ Zhu, F., Lei, W., Huang, Y., Wang, C., Zhang, S., Lv, J., Feng, F., & Chua, T.-S
   - the option-likelihood metric and significance testing;
   - the out-of-domain gate data assembly, shortcut diagnosis and probe sets;
   - the crisis rule, streaming app and Space packaging;
-  - the blind rating protocol;
+  - a blind rating protocol (prepared for future work, not run);
   - all analyses.

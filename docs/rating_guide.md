@@ -1,5 +1,7 @@
 # Manual Rating Guide (SAQ correctness and safety)
 
+> **Status:** prepared but **not used** in the submitted evaluation. It is kept as ready-to-run future work: `scripts/make_rating_sheet.py` builds the sheet and `scripts/score_ratings.py` scores it.
+
 ## Why rate by hand
 
 - ROUGE-L and BERTScore measure **overlap with a reference answer**, not medical correctness.
