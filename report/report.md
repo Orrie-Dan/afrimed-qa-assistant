@@ -6,8 +6,8 @@
 
 | | |
 |---|---|
-| GitHub repository | _[to add after the repository is published]_ |
-| Demo video (7–10 min) | _[to add]_ |
+| GitHub repository | https://github.com/Orrie-Dan/afrimed-qa-assistant |
+| Demo video (7–10 min) | https://youtu.be/r-1iQLhY5ek |
 | Live system | https://huggingface.co/spaces/OrrieUzi/afrimed-assistant (Hugging Face Spaces, CPU) |
 
 > **[AUTHOR TO COMPLETE: statement on AI assistance.]** If ALU's policy requires it, state here which parts of the work used AI tools (for example code drafting and report drafting) and confirm that you checked, ran and can explain all submitted work.

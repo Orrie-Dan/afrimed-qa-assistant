@@ -5,8 +5,8 @@
 | | |
 |---|---|
 | 🌐 **Live app** | https://huggingface.co/spaces/OrrieUzi/afrimed-assistant |
-| 🎥 **Demo video** | _to be added_ |
-| 📄 **Report** | _to be added_ |
+| 🎥 **Demo video** | https://youtu.be/r-1iQLhY5ek |
+| 📄 **Report** | [`report/report.docx`](report/report.docx) (source: [`report/report.md`](report/report.md)) |
 
 > ⚠️ **Not medical advice.** This is an academic project. The model can be wrong, sometimes confidently: see [Limitations](#limitations).
 
