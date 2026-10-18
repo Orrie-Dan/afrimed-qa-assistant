@@ -1,0 +1,11 @@
+a,b,metric,n,acc_a,acc_b,only_a_correct,only_b_correct,p_value
+E0_zeroshot_0.5B,E1_lora_0.5B_saq+mcq,likelihood,744,0.3105,0.3777,78,128,0.00061
+E0_zeroshot_0.5B,E1_lora_0.5B_saq+mcq,generative,806,0.0558,0.33,16,237,0.0
+E0_zeroshot_1.5B,E3_lora_1.5B_saq+mcq,likelihood,744,0.4785,0.5081,71,93,0.10075
+E0_zeroshot_1.5B,E3_lora_1.5B_saq+mcq,generative,806,0.3598,0.4541,69,145,0.0
+E1_lora_0.5B_saq+mcq,E3_lora_1.5B_saq+mcq,likelihood,744,0.3777,0.5081,73,170,0.0
+E1_lora_0.5B_saq+mcq,E3_lora_1.5B_saq+mcq,generative,806,0.33,0.4541,67,167,0.0
+E1_lora_0.5B_saq+mcq,E2_lora_0.5B_saq,likelihood,744,0.3777,0.3185,125,81,0.00265
+E1_lora_0.5B_saq+mcq,E2_lora_0.5B_saq,generative,806,0.33,0.0298,255,13,0.0
+E0_zeroshot_1.5B,E1_lora_0.5B_saq+mcq,likelihood,744,0.4785,0.3777,172,97,1e-05
+E0_zeroshot_1.5B,E1_lora_0.5B_saq+mcq,generative,806,0.3598,0.33,149,125,0.16457

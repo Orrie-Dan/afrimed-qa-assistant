@@ -1,0 +1,9 @@
+{
+  "source": "notebooks/05_cpu_latency.ipynb, Colab CPU (GPU runtime attached but model ran on CPU), as pasted 2026-10-14",
+  "env": {"cpu_count": 2, "ram_gb": 13.6, "cuda": true, "torch": "2.11.0+cu130", "transformers": "5.18.0", "peft": "0.21.1", "python": "3.13.15"},
+  "max_new_tokens": 200,
+  "models": [
+    {"experiment": "E1_lora_0.5B_saq+mcq", "load_seconds": 17.8, "process_ram_gb": 3.31, "mean_seconds": 12.3, "max_seconds": 47.1, "tokens_per_second": 4.58, "mean_new_tokens": 56.2},
+    {"experiment": "E3_lora_1.5B_saq+mcq", "load_seconds": 50.9, "process_ram_gb": 8.22, "mean_seconds": 28.8, "max_seconds": 75.1, "tokens_per_second": 1.75, "mean_new_tokens": 50.5}
+  ]
+}
