@@ -1,0 +1,269 @@
+{
+  "selection_grid": [
+    {
+      "features": "word",
+      "C": 0.3,
+      "val_balanced_acc": 0.977,
+      "val_roc_auc": 0.9972
+    },
+    {
+      "features": "word",
+      "C": 1.0,
+      "val_balanced_acc": 0.9826,
+      "val_roc_auc": 0.9984
+    },
+    {
+      "features": "word",
+      "C": 3.0,
+      "val_balanced_acc": 0.9867,
+      "val_roc_auc": 0.9988
+    },
+    {
+      "features": "word",
+      "C": 10.0,
+      "val_balanced_acc": 0.9882,
+      "val_roc_auc": 0.9991
+    },
+    {
+      "features": "char",
+      "C": 0.3,
+      "val_balanced_acc": 0.9838,
+      "val_roc_auc": 0.9989
+    },
+    {
+      "features": "char",
+      "C": 1.0,
+      "val_balanced_acc": 0.9871,
+      "val_roc_auc": 0.9993
+    },
+    {
+      "features": "char",
+      "C": 3.0,
+      "val_balanced_acc": 0.9893,
+      "val_roc_auc": 0.9995
+    },
+    {
+      "features": "char",
+      "C": 10.0,
+      "val_balanced_acc": 0.9916,
+      "val_roc_auc": 0.9996
+    },
+    {
+      "features": "word+char",
+      "C": 0.3,
+      "val_balanced_acc": 0.9859,
+      "val_roc_auc": 0.9992
+    },
+    {
+      "features": "word+char",
+      "C": 1.0,
+      "val_balanced_acc": 0.9903,
+      "val_roc_auc": 0.9995
+    },
+    {
+      "features": "word+char",
+      "C": 3.0,
+      "val_balanced_acc": 0.9921,
+      "val_roc_auc": 0.9996
+    },
+    {
+      "features": "word+char",
+      "C": 10.0,
+      "val_balanced_acc": 0.9933,
+      "val_roc_auc": 0.9997
+    }
+  ],
+  "selected": {
+    "features": "word+char",
+    "C": 10.0,
+    "val_balanced_acc": 0.9933,
+    "val_roc_auc": 0.9997
+  },
+  "threshold": 0.5,
+  "val": {
+    "n": 6260,
+    "balanced_acc": 0.9933,
+    "ood_precision": 0.9983,
+    "ood_recall": 0.9921,
+    "ood_f1": 0.9952,
+    "in_domain_recall": 0.9944,
+    "roc_auc": 0.9997,
+    "ood_avg_precision": 0.9999,
+    "confusion": {
+      "ood_declined": 4795,
+      "ood_answered": 38,
+      "med_declined": 8,
+      "med_answered": 1419
+    }
+  },
+  "test": {
+    "n": 6194,
+    "balanced_acc": 0.9897,
+    "ood_precision": 0.9943,
+    "ood_recall": 0.9917,
+    "ood_f1": 0.993,
+    "in_domain_recall": 0.9877,
+    "roc_auc": 0.9995,
+    "ood_avg_precision": 0.9998,
+    "confusion": {
+      "ood_declined": 4206,
+      "ood_answered": 35,
+      "med_declined": 24,
+      "med_answered": 1929
+    }
+  },
+  "test_at_0.5": {
+    "n": 6194,
+    "balanced_acc": 0.9897,
+    "ood_precision": 0.9943,
+    "ood_recall": 0.9917,
+    "ood_f1": 0.993,
+    "in_domain_recall": 0.9877,
+    "roc_auc": 0.9995,
+    "ood_avg_precision": 0.9998,
+    "confusion": {
+      "ood_declined": 4206,
+      "ood_answered": 35,
+      "med_declined": 24,
+      "med_answered": 1929
+    }
+  },
+  "test_by_source": {
+    "afrimed_consumer": {
+      "n": 901,
+      "acc": 0.9933
+    },
+    "afrimed_mcq": {
+      "n": 806,
+      "acc": 0.9839
+    },
+    "afrimed_saq": {
+      "n": 246,
+      "acc": 0.9797
+    },
+    "afriqa": {
+      "n": 2641,
+      "acc": 0.9936
+    },
+    "squad": {
+      "n": 800,
+      "acc": 0.9788
+    },
+    "tatqa": {
+      "n": 800,
+      "acc": 0.9988
+    }
+  },
+  "test_africa_mentioning_negatives": {
+    "n": 581,
+    "correctly_declined": 0.9948
+  },
+  "probe": {
+    "n": 62,
+    "balanced_acc": 0.7989,
+    "ood_precision": 0.9167,
+    "ood_recall": 0.6667,
+    "ood_f1": 0.7719,
+    "in_domain_recall": 0.931,
+    "roc_auc": 0.8976,
+    "ood_avg_precision": 0.9222,
+    "confusion": {
+      "ood_declined": 22,
+      "ood_answered": 11,
+      "med_declined": 2,
+      "med_answered": 27
+    }
+  },
+  "probe_by_category": {
+    "africa_non_medical": {
+      "n": 10,
+      "acc": 0.9
+    },
+    "agriculture_veterinary": {
+      "n": 6,
+      "acc": 0.3333
+    },
+    "finance": {
+      "n": 5,
+      "acc": 0.8
+    },
+    "general": {
+      "n": 8,
+      "acc": 0.375
+    },
+    "health_adjacent_in": {
+      "n": 6,
+      "acc": 0.8333
+    },
+    "health_admin_borderline": {
+      "n": 4,
+      "acc": 1.0
+    },
+    "medical_african": {
+      "n": 8,
+      "acc": 0.875
+    },
+    "medical_colloquial": {
+      "n": 6,
+      "acc": 1.0
+    },
+    "medical_plain": {
+      "n": 9,
+      "acc": 1.0
+    }
+  },
+  "top_words_non_medical": [
+    "what",
+    "did",
+    "who",
+    "was",
+    "how many",
+    "many",
+    "how",
+    "where",
+    "the",
+    "which",
+    "were",
+    "was the",
+    "2019",
+    "what do",
+    "when",
+    "can one",
+    "did the",
+    "what was",
+    "country",
+    "how old",
+    "how are",
+    "what type",
+    "2018",
+    "state",
+    "does the"
+  ],
+  "top_words_medical": [
+    "my",
+    "the following",
+    "following",
+    "it",
+    "what are",
+    "you",
+    "which of",
+    "are the",
+    "did you",
+    "disease",
+    "pain",
+    "treatment",
+    "she",
+    "he",
+    "can",
+    "should",
+    "cancer",
+    "this",
+    "which is",
+    "me",
+    "will",
+    "do have",
+    "how to",
+    "in african",
+    "cyst"
+  ]
+}

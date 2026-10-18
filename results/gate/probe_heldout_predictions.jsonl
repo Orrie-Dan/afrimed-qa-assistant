@@ -1,0 +1,57 @@
+{"text": "What are the warning signs of pre-eclampsia?", "label": 1, "category": "medical_plain", "prob_medical": 0.8436, "correct": true}
+{"text": "How does insulin work in the body?", "label": 1, "category": "medical_plain", "prob_medical": 0.4385, "correct": true}
+{"text": "Should I finish the full course of antibiotics even if I feel better?", "label": 1, "category": "medical_plain", "prob_medical": 0.964, "correct": true}
+{"text": "What is a normal blood pressure for an adult?", "label": 1, "category": "medical_plain", "prob_medical": 0.9791, "correct": true}
+{"text": "Can stress cause stomach ulcers?", "label": 1, "category": "medical_plain", "prob_medical": 0.9959, "correct": true}
+{"text": "What are the symptoms of appendicitis?", "label": 1, "category": "medical_plain", "prob_medical": 0.958, "correct": true}
+{"text": "How is asthma diagnosed in children?", "label": 1, "category": "medical_plain", "prob_medical": 0.9871, "correct": true}
+{"text": "What does a high white blood cell count mean?", "label": 1, "category": "medical_plain", "prob_medical": 0.1495, "correct": false}
+{"text": "How is typhoid fever treated in Uganda?", "label": 1, "category": "medical_african", "prob_medical": 0.9534, "correct": true}
+{"text": "Are mosquito nets effective against malaria in Tanzania?", "label": 1, "category": "medical_african", "prob_medical": 0.6826, "correct": true}
+{"text": "What causes Buruli ulcer?", "label": 1, "category": "medical_african", "prob_medical": 0.8595, "correct": true}
+{"text": "How common is hypertension among adults in South Africa?", "label": 1, "category": "medical_african", "prob_medical": 0.8839, "correct": true}
+{"text": "What should a mother in rural Ethiopia do if her newborn has jaundice?", "label": 1, "category": "medical_african", "prob_medical": 0.7476, "correct": true}
+{"text": "Is river blindness treatable?", "label": 1, "category": "medical_african", "prob_medical": 0.9676, "correct": true}
+{"text": "What is the recommended treatment for meningitis during the dry season in Niger?", "label": 1, "category": "medical_african", "prob_medical": 0.9586, "correct": true}
+{"text": "my child keeps scratching his head, could it be ringworm", "label": 1, "category": "medical_colloquial", "prob_medical": 0.9954, "correct": true}
+{"text": "i get headaches every morning, why", "label": 1, "category": "medical_colloquial", "prob_medical": 0.2295, "correct": false}
+{"text": "can i drink alcohol while taking malaria tablets", "label": 1, "category": "medical_colloquial", "prob_medical": 0.99, "correct": true}
+{"text": "my eyes are red and itchy since yesterday", "label": 1, "category": "medical_colloquial", "prob_medical": 0.795, "correct": true}
+{"text": "chest pain when i climb stairs is that serious", "label": 1, "category": "medical_colloquial", "prob_medical": 0.9081, "correct": true}
+{"text": "Is it normal to bleed a little in early pregnancy?", "label": 1, "category": "health_adjacent_in", "prob_medical": 0.9893, "correct": true}
+{"text": "How can I help a friend who talks about suicide?", "label": 1, "category": "health_adjacent_in", "prob_medical": 0.0348, "correct": false}
+{"text": "What foods should someone with diabetes avoid?", "label": 1, "category": "health_adjacent_in", "prob_medical": 0.9904, "correct": true}
+{"text": "How do I treat a minor burn at home?", "label": 1, "category": "health_adjacent_in", "prob_medical": 0.9384, "correct": true}
+{"text": "How many hours of sleep does a teenager need?", "label": 1, "category": "health_adjacent_in", "prob_medical": 0.213, "correct": false}
+{"text": "Which family planning methods are available after giving birth?", "label": 1, "category": "health_adjacent_in", "prob_medical": 0.3761, "correct": false}
+{"text": "Who is the current president of Senegal?", "label": 0, "category": "africa_non_medical", "prob_medical": 0.0041, "correct": true}
+{"text": "What is the main export of Zambia?", "label": 0, "category": "africa_non_medical", "prob_medical": 0.0049, "correct": true}
+{"text": "Which ocean borders Mozambique?", "label": 0, "category": "africa_non_medical", "prob_medical": 0.0275, "correct": true}
+{"text": "What is jollof rice and how is it cooked?", "label": 0, "category": "africa_non_medical", "prob_medical": 0.0879, "correct": true}
+{"text": "Where can I see gorillas in Uganda?", "label": 0, "category": "africa_non_medical", "prob_medical": 0.09, "correct": true}
+{"text": "What does the word ubuntu mean?", "label": 0, "category": "africa_non_medical", "prob_medical": 0.0028, "correct": true}
+{"text": "How do I get a visa to visit Morocco?", "label": 0, "category": "africa_non_medical", "prob_medical": 0.0643, "correct": true}
+{"text": "Who wrote Things Fall Apart?", "label": 0, "category": "africa_non_medical", "prob_medical": 0.0046, "correct": true}
+{"text": "How do I pay my electricity bill with Airtel Money?", "label": 0, "category": "finance", "prob_medical": 0.1675, "correct": true}
+{"text": "Should I invest in government bonds or a fixed deposit?", "label": 0, "category": "finance", "prob_medical": 0.1592, "correct": true}
+{"text": "What is inflation and why does it happen?", "label": 0, "category": "finance", "prob_medical": 0.3294, "correct": true}
+{"text": "How can I start a small business with little money?", "label": 0, "category": "finance", "prob_medical": 0.1285, "correct": true}
+{"text": "My goats are coughing and have a runny nose, what should I give them?", "label": 0, "category": "agriculture_veterinary", "prob_medical": 0.8117, "correct": false}
+{"text": "How do I stop fall armyworm from destroying my maize?", "label": 0, "category": "agriculture_veterinary", "prob_medical": 0.044, "correct": true}
+{"text": "What is the best feed for broiler chickens?", "label": 0, "category": "agriculture_veterinary", "prob_medical": 0.0747, "correct": true}
+{"text": "How often should I deworm my sheep?", "label": 0, "category": "agriculture_veterinary", "prob_medical": 0.8984, "correct": false}
+{"text": "Why is my cow not producing much milk?", "label": 0, "category": "agriculture_veterinary", "prob_medical": 0.4568, "correct": false}
+{"text": "How do I improve clay soil for growing beans?", "label": 0, "category": "agriculture_veterinary", "prob_medical": 0.0055, "correct": true}
+{"text": "Where is the nearest pharmacy open on Sunday in Nairobi?", "label": 0, "category": "health_admin_borderline", "prob_medical": 0.0331, "correct": true}
+{"text": "How do I register for the national health insurance scheme in Ghana?", "label": 0, "category": "health_admin_borderline", "prob_medical": 0.1776, "correct": true}
+{"text": "How many years does it take to become a doctor in Nigeria?", "label": 0, "category": "health_admin_borderline", "prob_medical": 0.2345, "correct": true}
+{"text": "Good morning, how are you today?", "label": 0, "category": "general", "prob_medical": 0.0448, "correct": true}
+{"text": "Can you help me write a cover letter for a teaching job?", "label": 0, "category": "general", "prob_medical": 0.1166, "correct": true}
+{"text": "Translate 'thank you' into French.", "label": 0, "category": "general", "prob_medical": 0.1055, "correct": true}
+{"text": "What should I name my new puppy?", "label": 0, "category": "general", "prob_medical": 0.0482, "correct": true}
+{"text": "Give me three ideas for a birthday party.", "label": 0, "category": "general", "prob_medical": 0.0073, "correct": true}
+{"text": "How do I fix a flat bicycle tyre?", "label": 0, "category": "general", "prob_medical": 0.0454, "correct": true}
+{"text": "Summarise the plot of Romeo and Juliet.", "label": 0, "category": "general", "prob_medical": 0.0668, "correct": true}
+{"text": "What is 15 percent of 240?", "label": 0, "category": "general", "prob_medical": 0.0377, "correct": true}
+{"text": "I'm bored, what can I do this weekend?", "label": 0, "category": "general", "prob_medical": 0.6343, "correct": false}
+{"text": "Pretend you are a pirate and tell me about your ship.", "label": 0, "category": "general", "prob_medical": 0.1538, "correct": true}

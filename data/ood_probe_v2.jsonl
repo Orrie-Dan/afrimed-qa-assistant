@@ -1,0 +1,57 @@
+{"text": "What are the warning signs of pre-eclampsia?", "label": 1, "category": "medical_plain"}
+{"text": "How does insulin work in the body?", "label": 1, "category": "medical_plain"}
+{"text": "Should I finish the full course of antibiotics even if I feel better?", "label": 1, "category": "medical_plain"}
+{"text": "What is a normal blood pressure for an adult?", "label": 1, "category": "medical_plain"}
+{"text": "Can stress cause stomach ulcers?", "label": 1, "category": "medical_plain"}
+{"text": "What are the symptoms of appendicitis?", "label": 1, "category": "medical_plain"}
+{"text": "How is asthma diagnosed in children?", "label": 1, "category": "medical_plain"}
+{"text": "What does a high white blood cell count mean?", "label": 1, "category": "medical_plain"}
+{"text": "How is typhoid fever treated in Uganda?", "label": 1, "category": "medical_african"}
+{"text": "Are mosquito nets effective against malaria in Tanzania?", "label": 1, "category": "medical_african"}
+{"text": "What causes Buruli ulcer?", "label": 1, "category": "medical_african"}
+{"text": "How common is hypertension among adults in South Africa?", "label": 1, "category": "medical_african"}
+{"text": "What should a mother in rural Ethiopia do if her newborn has jaundice?", "label": 1, "category": "medical_african"}
+{"text": "Is river blindness treatable?", "label": 1, "category": "medical_african"}
+{"text": "What is the recommended treatment for meningitis during the dry season in Niger?", "label": 1, "category": "medical_african"}
+{"text": "my child keeps scratching his head, could it be ringworm", "label": 1, "category": "medical_colloquial"}
+{"text": "i get headaches every morning, why", "label": 1, "category": "medical_colloquial"}
+{"text": "can i drink alcohol while taking malaria tablets", "label": 1, "category": "medical_colloquial"}
+{"text": "my eyes are red and itchy since yesterday", "label": 1, "category": "medical_colloquial"}
+{"text": "chest pain when i climb stairs is that serious", "label": 1, "category": "medical_colloquial"}
+{"text": "Is it normal to bleed a little in early pregnancy?", "label": 1, "category": "health_adjacent_in"}
+{"text": "How can I help a friend who talks about suicide?", "label": 1, "category": "health_adjacent_in"}
+{"text": "What foods should someone with diabetes avoid?", "label": 1, "category": "health_adjacent_in"}
+{"text": "How do I treat a minor burn at home?", "label": 1, "category": "health_adjacent_in"}
+{"text": "How many hours of sleep does a teenager need?", "label": 1, "category": "health_adjacent_in"}
+{"text": "Which family planning methods are available after giving birth?", "label": 1, "category": "health_adjacent_in"}
+{"text": "Who is the current president of Senegal?", "label": 0, "category": "africa_non_medical"}
+{"text": "What is the main export of Zambia?", "label": 0, "category": "africa_non_medical"}
+{"text": "Which ocean borders Mozambique?", "label": 0, "category": "africa_non_medical"}
+{"text": "What is jollof rice and how is it cooked?", "label": 0, "category": "africa_non_medical"}
+{"text": "Where can I see gorillas in Uganda?", "label": 0, "category": "africa_non_medical"}
+{"text": "What does the word ubuntu mean?", "label": 0, "category": "africa_non_medical"}
+{"text": "How do I get a visa to visit Morocco?", "label": 0, "category": "africa_non_medical"}
+{"text": "Who wrote Things Fall Apart?", "label": 0, "category": "africa_non_medical"}
+{"text": "How do I pay my electricity bill with Airtel Money?", "label": 0, "category": "finance"}
+{"text": "Should I invest in government bonds or a fixed deposit?", "label": 0, "category": "finance"}
+{"text": "What is inflation and why does it happen?", "label": 0, "category": "finance"}
+{"text": "How can I start a small business with little money?", "label": 0, "category": "finance"}
+{"text": "My goats are coughing and have a runny nose, what should I give them?", "label": 0, "category": "agriculture_veterinary"}
+{"text": "How do I stop fall armyworm from destroying my maize?", "label": 0, "category": "agriculture_veterinary"}
+{"text": "What is the best feed for broiler chickens?", "label": 0, "category": "agriculture_veterinary"}
+{"text": "How often should I deworm my sheep?", "label": 0, "category": "agriculture_veterinary"}
+{"text": "Why is my cow not producing much milk?", "label": 0, "category": "agriculture_veterinary"}
+{"text": "How do I improve clay soil for growing beans?", "label": 0, "category": "agriculture_veterinary"}
+{"text": "Where is the nearest pharmacy open on Sunday in Nairobi?", "label": 0, "category": "health_admin_borderline"}
+{"text": "How do I register for the national health insurance scheme in Ghana?", "label": 0, "category": "health_admin_borderline"}
+{"text": "How many years does it take to become a doctor in Nigeria?", "label": 0, "category": "health_admin_borderline"}
+{"text": "Good morning, how are you today?", "label": 0, "category": "general"}
+{"text": "Can you help me write a cover letter for a teaching job?", "label": 0, "category": "general"}
+{"text": "Translate 'thank you' into French.", "label": 0, "category": "general"}
+{"text": "What should I name my new puppy?", "label": 0, "category": "general"}
+{"text": "Give me three ideas for a birthday party.", "label": 0, "category": "general"}
+{"text": "How do I fix a flat bicycle tyre?", "label": 0, "category": "general"}
+{"text": "Summarise the plot of Romeo and Juliet.", "label": 0, "category": "general"}
+{"text": "What is 15 percent of 240?", "label": 0, "category": "general"}
+{"text": "I'm bored, what can I do this weekend?", "label": 0, "category": "general"}
+{"text": "Pretend you are a pirate and tell me about your ship.", "label": 0, "category": "general"}

@@ -1,0 +1,331 @@
+{
+  "selection_grid": [
+    {
+      "features": "word",
+      "C": 0.3,
+      "val_balanced_acc": 0.9633,
+      "val_roc_auc": 0.9959
+    },
+    {
+      "features": "word",
+      "C": 1.0,
+      "val_balanced_acc": 0.9741,
+      "val_roc_auc": 0.9977
+    },
+    {
+      "features": "word",
+      "C": 3.0,
+      "val_balanced_acc": 0.9806,
+      "val_roc_auc": 0.9985
+    },
+    {
+      "features": "word",
+      "C": 10.0,
+      "val_balanced_acc": 0.9829,
+      "val_roc_auc": 0.9988
+    },
+    {
+      "features": "char",
+      "C": 0.3,
+      "val_balanced_acc": 0.9739,
+      "val_roc_auc": 0.9974
+    },
+    {
+      "features": "char",
+      "C": 1.0,
+      "val_balanced_acc": 0.9826,
+      "val_roc_auc": 0.9985
+    },
+    {
+      "features": "char",
+      "C": 3.0,
+      "val_balanced_acc": 0.9863,
+      "val_roc_auc": 0.9991
+    },
+    {
+      "features": "char",
+      "C": 10.0,
+      "val_balanced_acc": 0.9876,
+      "val_roc_auc": 0.9992
+    },
+    {
+      "features": "word+char",
+      "C": 0.3,
+      "val_balanced_acc": 0.9785,
+      "val_roc_auc": 0.9986
+    },
+    {
+      "features": "word+char",
+      "C": 1.0,
+      "val_balanced_acc": 0.9856,
+      "val_roc_auc": 0.9992
+    },
+    {
+      "features": "word+char",
+      "C": 3.0,
+      "val_balanced_acc": 0.9886,
+      "val_roc_auc": 0.9994
+    },
+    {
+      "features": "word+char",
+      "C": 10.0,
+      "val_balanced_acc": 0.9855,
+      "val_roc_auc": 0.9991
+    }
+  ],
+  "selected": {
+    "features": "word+char",
+    "C": 3.0,
+    "val_balanced_acc": 0.9886,
+    "val_roc_auc": 0.9994
+  },
+  "threshold": 0.4,
+  "val": {
+    "n": 7270,
+    "balanced_acc": 0.9907,
+    "ood_precision": 0.9981,
+    "ood_recall": 0.989,
+    "ood_f1": 0.9936,
+    "in_domain_recall": 0.9923,
+    "roc_auc": 0.9994,
+    "ood_avg_precision": 0.9999,
+    "confusion": {
+      "ood_declined": 5779,
+      "ood_answered": 64,
+      "med_declined": 11,
+      "med_answered": 1416
+    }
+  },
+  "test": {
+    "n": 7210,
+    "balanced_acc": 0.9837,
+    "ood_precision": 0.9935,
+    "ood_recall": 0.9848,
+    "ood_f1": 0.9891,
+    "in_domain_recall": 0.9826,
+    "roc_auc": 0.9988,
+    "ood_avg_precision": 0.9996,
+    "confusion": {
+      "ood_declined": 5177,
+      "ood_answered": 80,
+      "med_declined": 34,
+      "med_answered": 1919
+    }
+  },
+  "test_at_0.5": {
+    "n": 7210,
+    "balanced_acc": 0.9823,
+    "ood_precision": 0.9905,
+    "ood_recall": 0.9903,
+    "ood_f1": 0.9904,
+    "in_domain_recall": 0.9744,
+    "roc_auc": 0.9988,
+    "ood_avg_precision": 0.9996,
+    "confusion": {
+      "ood_declined": 5206,
+      "ood_answered": 51,
+      "med_declined": 50,
+      "med_answered": 1903
+    }
+  },
+  "test_by_source": {
+    "afrimed_consumer": {
+      "n": 901,
+      "acc": 0.9889
+    },
+    "afrimed_mcq": {
+      "n": 806,
+      "acc": 0.9789
+    },
+    "afrimed_saq": {
+      "n": 246,
+      "acc": 0.9715
+    },
+    "afriqa": {
+      "n": 2635,
+      "acc": 0.9939
+    },
+    "agri": {
+      "n": 222,
+      "acc": 0.955
+    },
+    "dolly": {
+      "n": 800,
+      "acc": 0.96
+    },
+    "squad": {
+      "n": 800,
+      "acc": 0.9738
+    },
+    "tatqa": {
+      "n": 800,
+      "acc": 0.9988
+    }
+  },
+  "test_africa_mentioning_negatives": {
+    "n": 590,
+    "correctly_declined": 0.9898
+  },
+  "probe_dev": {
+    "n": 62,
+    "balanced_acc": 0.8725,
+    "ood_precision": 0.9032,
+    "ood_recall": 0.8485,
+    "ood_f1": 0.875,
+    "in_domain_recall": 0.8966,
+    "roc_auc": 0.9572,
+    "ood_avg_precision": 0.9646,
+    "confusion": {
+      "ood_declined": 28,
+      "ood_answered": 5,
+      "med_declined": 3,
+      "med_answered": 26
+    }
+  },
+  "probe_dev_by_category": {
+    "africa_non_medical": {
+      "n": 10,
+      "acc": 0.9
+    },
+    "agriculture_veterinary": {
+      "n": 6,
+      "acc": 0.5
+    },
+    "finance": {
+      "n": 5,
+      "acc": 1.0
+    },
+    "general": {
+      "n": 8,
+      "acc": 0.875
+    },
+    "health_adjacent_in": {
+      "n": 6,
+      "acc": 0.6667
+    },
+    "health_admin_borderline": {
+      "n": 4,
+      "acc": 1.0
+    },
+    "medical_african": {
+      "n": 8,
+      "acc": 0.875
+    },
+    "medical_colloquial": {
+      "n": 6,
+      "acc": 1.0
+    },
+    "medical_plain": {
+      "n": 9,
+      "acc": 1.0
+    }
+  },
+  "probe_heldout": {
+    "n": 57,
+    "balanced_acc": 0.8393,
+    "ood_precision": 0.8438,
+    "ood_recall": 0.871,
+    "ood_f1": 0.8571,
+    "in_domain_recall": 0.8077,
+    "roc_auc": 0.9231,
+    "ood_avg_precision": 0.9259,
+    "confusion": {
+      "ood_declined": 27,
+      "ood_answered": 4,
+      "med_declined": 5,
+      "med_answered": 21
+    }
+  },
+  "probe_heldout_by_category": {
+    "africa_non_medical": {
+      "n": 8,
+      "acc": 1.0
+    },
+    "agriculture_veterinary": {
+      "n": 6,
+      "acc": 0.5
+    },
+    "finance": {
+      "n": 4,
+      "acc": 1.0
+    },
+    "general": {
+      "n": 10,
+      "acc": 0.9
+    },
+    "health_adjacent_in": {
+      "n": 6,
+      "acc": 0.5
+    },
+    "health_admin_borderline": {
+      "n": 3,
+      "acc": 1.0
+    },
+    "medical_african": {
+      "n": 7,
+      "acc": 1.0
+    },
+    "medical_colloquial": {
+      "n": 5,
+      "acc": 0.8
+    },
+    "medical_plain": {
+      "n": 8,
+      "acc": 0.875
+    }
+  },
+  "top_words_non_medical": [
+    "what",
+    "who",
+    "did",
+    "why",
+    "was",
+    "how",
+    "trees",
+    "what is",
+    "how many",
+    "many",
+    "where",
+    "soil",
+    "name",
+    "which",
+    "cassava",
+    "was the",
+    "were",
+    "plants",
+    "tell",
+    "maize",
+    "car",
+    "tell me",
+    "what was",
+    "the",
+    "when"
+  ],
+  "top_words_medical": [
+    "pain",
+    "which of",
+    "she",
+    "my",
+    "treatment",
+    "he",
+    "it",
+    "skin",
+    "cancer",
+    "did you",
+    "fever",
+    "am",
+    "can",
+    "the following",
+    "cause",
+    "patient",
+    "hiv",
+    "this",
+    "will",
+    "normal",
+    "tests",
+    "in african",
+    "following",
+    "is",
+    "child"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "train": {
+    "afrimed_consumer": 7208,
+    "tatqa": 4000,
+    "dolly": 4000,
+    "squad": 4000,
+    "afriqa": 3268,
+    "afrimed_mcq": 2824,
+    "agri": 1762,
+    "afrimed_saq": 861,
+    "total_pos": 10893,
+    "total_neg": 17030
+  },
+  "val": {
+    "afriqa": 3223,
+    "afrimed_consumer": 901,
+    "squad": 800,
+    "dolly": 800,
+    "tatqa": 800,
+    "afrimed_mcq": 403,
+    "agri": 220,
+    "afrimed_saq": 123,
+    "total_pos": 1427,
+    "total_neg": 5843
+  },
+  "test": {
+    "afriqa": 2635,
+    "afrimed_consumer": 901,
+    "afrimed_mcq": 806,
+    "dolly": 800,
+    "squad": 800,
+    "tatqa": 800,
+    "afrimed_saq": 246,
+    "agri": 222,
+    "total_pos": 1953,
+    "total_neg": 5257
+  },
+  "removed_negatives": {
+    "squad|medical article": 4156,
+    "squad|medical term": 1697,
+    "dolly|medical term": 364,
+    "afriqa|medical term": 247,
+    "tatqa|medical term": 40,
+    "agri|medical term": 7
+  }
+}

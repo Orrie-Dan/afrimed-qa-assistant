@@ -1,0 +1,56 @@
+{
+  "probe_heldout": {
+    "n": 57,
+    "balanced_acc": 0.6681,
+    "ood_precision": 0.8235,
+    "ood_recall": 0.4516,
+    "ood_f1": 0.5833,
+    "in_domain_recall": 0.8846,
+    "roc_auc": 0.8015,
+    "ood_avg_precision": 0.8471,
+    "confusion": {
+      "ood_declined": 14,
+      "ood_answered": 17,
+      "med_declined": 3,
+      "med_answered": 23
+    }
+  },
+  "probe_heldout_by_category": {
+    "africa_non_medical": {
+      "n": 8,
+      "acc": 1.0
+    },
+    "agriculture_veterinary": {
+      "n": 6,
+      "acc": 0.1667
+    },
+    "finance": {
+      "n": 4,
+      "acc": 0.0
+    },
+    "general": {
+      "n": 10,
+      "acc": 0.2
+    },
+    "health_adjacent_in": {
+      "n": 6,
+      "acc": 0.8333
+    },
+    "health_admin_borderline": {
+      "n": 3,
+      "acc": 1.0
+    },
+    "medical_african": {
+      "n": 7,
+      "acc": 1.0
+    },
+    "medical_colloquial": {
+      "n": 5,
+      "acc": 1.0
+    },
+    "medical_plain": {
+      "n": 8,
+      "acc": 0.75
+    }
+  }
+}
