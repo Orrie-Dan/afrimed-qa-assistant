@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# Large or rebuildable artefacts
+# ---------------------------------------------------------------------------
+# Raw downloads: rebuild with `python -P scripts/download_data.py` (pinned URLs + checksums in data/raw_manifest.json)
+data/raw/
+
+# Fine-tuned LoRA adapter (74 MB): published with the app at
+# https://huggingface.co/spaces/OrrieUzi/afrimed-assistant/tree/main/adapter
+models/adapter/
+
+# Build output of scripts/build_space.py
+space/
+
+# Superseded first version of the out-of-domain gate (its metrics stay in results/gate/v1_no_dolly_agri/)
+results/gate/v1_no_dolly_agri/*.joblib
+
+# ---------------------------------------------------------------------------
+# Personal working files (not part of the submission)
+# ---------------------------------------------------------------------------
+PLAN.md
+report/video_script.md
+
+# ---------------------------------------------------------------------------
+# Secrets and credentials (never commit)
+# ---------------------------------------------------------------------------
+.env
+.env.*
+*.token
+.huggingface/
+
+# ---------------------------------------------------------------------------
+# Python / notebooks
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# Office lock files, logs and temporary files
+# ---------------------------------------------------------------------------
+~$*
+*.tmp
+*.log
+*.bak
+
+# ---------------------------------------------------------------------------
+# OS / editor / tool folders
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+.claude/
